@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            div > p {
+                color: #000000;
+                color : #ea213a;
+                background-color: #ffffff; 
+            }
+    
+            div + p {
+                color: red;
+            }
+    
+            div * {
+                color: red;
+            }
+    
+            div ~ p {
+                color: red;
+            }
+    
+            a[href='http://4geeksacademy.com/'] {color: blue;}
+    
+            div[id*='section'] {color: red;}
+    
+            input{padding: 5px;}
+            
+            input:focus{font-size: 2em; background-color: aqua;}
+            
+            input:disabled{
+                background: #ddd;
+                color: #949494;
+                border: 2px solid black;
+            }
+    
+            #myUL li:first-child{color: blue;}
+            #myUL li:nth-child(3){background: orange;}
+            #myUL li a:first-of-type{background: green;}
+            input:enabled{ border: 2px solid black;}
+    
+        </style>
+    </head>
+    <body>
+        <div>
+            <a href="http://4geeksacademy.com/">Vist 4Geeks academy</a><br>
+            <input/>
+        </div>
+        <ul id="myUL">
+            <li>first-child</li>
+        </ul>
+        <select name="cars" >
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+        </select>
+
+        <form  action="/submit">
+            <input placeholder="usuario"/>
+            <input placeholder="contraseña"/>    
+        </form>
+        <img src="http://placekitten.com/100/200"/>
+    </body>
+    
+</html>
