@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">-->
+    <link href="../css/bootstrap-local.min.css" rel="stylesheet" >
+    <style>
+      body {
+      padding: 0;
+      margin: 0;
+      background: #f2f6e9;
+      }
+      .navbar {
+          background:#6ab446;
+      }
+      .nav-link,
+      .navbar-brand {
+          color: #fff;
+          cursor: pointer;
+      }
+      .nav-link:hover {
+          color: #000;
+      }
+      .navbar-collapse {
+          justify-content: flex-end;
+      }
+      .description {
+        left: 50%;
+        position: absolute;
+        top: 45%;
+        transform: translate(-50%, -55%);
+        text-align: center;
+      }
+      .description h1 {
+        color: #6ab446;
+      }
+      .description p {
+        color: #00f;
+        font-size: 1.3rem;
+        line-height: 1.5;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md">
+      <a class="navbar-brand" href="#">Logo</a>
+      <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="main-navigation">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="description">
+      <h1>Welcome to the Landing Page!</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum quam odio, quis placerat ante luctus eu. Sed aliquet dolor id sapien rutrum, id vulputate quam iaculis. Suspendisse consectetur mi id libero fringilla, in pharetra sem ullamcorper.</p>
+    </div>
+  </body>
+</html>
